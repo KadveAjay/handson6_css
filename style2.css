@@ -1,5 +1,7 @@
+*{
+   overflow: hidden;
+}
 .container{
-   
     position: relative;
 }
 
@@ -7,14 +9,15 @@
     background-image: url('./sky.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 400px;
+    background-position: center ;
+    height: 100vh;
+    width: 100%;
 }
 
 h1{
+    margin-top: 0px;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .happy{
@@ -31,24 +34,33 @@ h1{
 
 .city{
     height: 300px;
-    width: 1600px;
+    width: 200%;
     position: absolute;
-    top: 110px;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    background-repeat: repeat-x;
     animation-name: city;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 25s;
     animation-timing-function: linear;
 }
 
 @keyframes city{
     0%{translate:0px 0px;}
-    /* 50%{translate:-100px 0px;} */
-    100%{translate:-100px 0px;}
+    100%{translate:-1000px 0px;}
 }
 
 .road{
-    /* width: 97vw; */
-    height: 800px;
+    width: 500%; 
+    height: 200px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
     animation-name: road;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -63,8 +75,8 @@ h1{
 .car{
     width: 300px;
     position: absolute;
-    top: 450px;
-    left: 500px;
+    bottom: 150px;
+    left: 400px;
     animation-name: car;
     animation-iteration-count: infinite;
     animation-duration: 1s;
@@ -80,8 +92,8 @@ h1{
 .back-tyre{
     width: 53px;
     position: absolute;
-    top: 517px;
-    left: 527px;
+    bottom: 155px;
+    left: 427px;
     animation-name: rotate;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -91,8 +103,8 @@ h1{
 .front-tyre{
     width: 53px;
     position: absolute;
-    top: 517px;
-    left: 711px;
+    bottom: 155px;
+    left: 611px;
     animation-name: rotate;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -110,8 +122,8 @@ h1{
 
 .flag{
     position: absolute;
-    top: 440px;
-    left: 702px;
+    bottom: 210px;
+    left: 610px;
     width: 70px;
 }
 
