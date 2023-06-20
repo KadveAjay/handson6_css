@@ -1,6 +1,10 @@
 *{
    overflow: hidden;
 }
+body{
+    border: 15px solid;
+    border-color: white green white orange;
+}
 .container{
     position: relative;
 }
